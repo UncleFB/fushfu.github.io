@@ -17,7 +17,8 @@
       <pubDate>Tue, 31 Jan 2023 00:12:57 +0800</pubDate>
       
       <guid>http://fushfu.org/posts/my-first-post/</guid>
-      <description>Hugo 先 push 上去看看效果</description>
+      <description>Hugo 先 push 上去看看效果
+修改内容，测试 publish 脚本</description>
     </item>
     
   </channel>
