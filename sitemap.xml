@@ -3,15 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://fushfu.org/posts/hugo/</loc>
+    <lastmod>2023-01-31T23:17:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fushfu.org/posts/</loc>
+    <lastmod>2023-01-31T23:17:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fushfu.org/</loc>
+    <lastmod>2023-01-31T23:17:58+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://fushfu.org/categories/</loc>
   </url>
   
   <url>
     <loc>http://fushfu.org/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>http://fushfu.org/</loc>
   </url>
   
 </urlset>
