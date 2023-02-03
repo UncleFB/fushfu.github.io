@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Even - A super concise theme for Hugo</title>
+  <title>Hugo - Even - A super concise theme for Hugo</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="付师傅" /><meta name="description" content="Hugo theme even example site." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="付师傅" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-  <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Even - A super concise theme for Hugo" />
-  <link href="http://localhost:1313/index.xml" rel="feed" type="application/rss+xml" title="Even - A super concise theme for Hugo" />
+<link rel="canonical" href="http://localhost:1313/post/hugo/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,15 +39,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Even - A super concise theme for Hugo" />
-<meta property="og:description" content="Hugo theme even example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
-<meta property="og:updated_time" content="2023-02-01T23:16:40+08:00" />
-<meta itemprop="name" content="Even - A super concise theme for Hugo">
-<meta itemprop="description" content="Hugo theme even example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Even - A super concise theme for Hugo"/>
-<meta name="twitter:description" content="Hugo theme even example site."/>
+<meta property="og:title" content="Hugo" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/hugo/" />
+<meta property="article:published_time" content="2023-02-01T23:16:40+08:00" />
+<meta property="article:modified_time" content="2023-02-01T23:16:40+08:00" />
+<meta itemprop="name" content="Hugo">
+<meta itemprop="description" content="">
+<meta itemprop="datePublished" content="2023-02-01T23:16:40&#43;08:00" />
+<meta itemprop="dateModified" content="2023-02-01T23:16:40&#43;08:00" />
+<meta itemprop="wordCount" content="475">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo"/>
+<meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -119,32 +125,62 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          <section id="posts" class="posts">
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/hugo/">Hugo</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-02-01 </span>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/hugo/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Hugo</h1>
 
-    </section>
-  
-  <nav class="pagination">
+      <div class="post-meta">
+        <span class="post-time"> 2023-02-01 </span>
+        
+        
+      </div>
+    </header>
+
     
+    <div class="post-content">
+      <p>过年好！新的一年从搭个博客开始。</p>
+<h1 id="hugo-简介">Hugo 简介</h1>
+<p><a href="https://gohugo.io/">Hugo主页</a></p>
+<p>我了解的博客框架不多，Hugo 的主页上赫然写到 The world’s fastest framework for building websites，感觉很牛的样子。</p>
+<p>Hugo 是使用 Go 语言编写的，是一个快速的现代静态页面生成器，它让建网页再次有趣 (make website creation fun again)。</p>
+<h1 id="hugo-安装">Hugo 安装</h1>
+<p>我这边是用了 WSL2，所以可以按照官网上 Ubantu 系统的方式来安装</p>
+<p>可以直接执行 <code>sudo apt install hugo</code> 来完成安装。</p>
+<h1 id="新建一个网站">新建一个网站</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site fushfu
+<span class="nb">cd</span> fushfu
+git init
+git submodule add https://github.com/olOwOlo/hugo-theme-even themes/even
+</code></pre></td></tr></table>
+</div>
+</div><p>这里我选择了 Even 这个主题。进到 themes/even/exampleSite 文件夹下，复制 config.toml 到 项目根目录下。执行 <code>hugo server</code>，会启动服务，之后打开 <a href="http://localhost:1313/">localhost:1313</a></p>
+<p>执行 hugo server 后，会开启服务，访问 <a href="http://localhost:1313/">localhost:1313</a> 就可以看到你的网站了。</p>
+<h1 id="新建一个网页">新建一个网页</h1>
+<p>执行 <code>hugo new post/hugo.md</code> 就创建了你现在看到的页面。</p>
+<h1 id="编译部署">编译部署</h1>
+<p>一般页面头部会有一个 draft 属性，如果是 true， 则默认编译的时候不会输出这个页面。当内容写完之后，就可以将 draft 设置为 false。然后执行 <code>hugo new post/hugo.md</code></p>
+<p>执行 <code>hugo</code> 就可以构建静态网站了，可以使用 <code>destination</code> 参数指定编译文件的输出位置。</p>
+<p>然后可以部署在 githubpage 上，具体方法就是在 github 上创建一个和 github 用户名相同的仓库，然后把编译好的项目推上去，访问 username.github.io (username是你的 github 用户名)，即可访问、</p>
+    </div>
+
     
-  </nav>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
         </div>
         
 
